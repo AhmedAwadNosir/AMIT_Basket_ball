@@ -40,9 +40,16 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "Team A",
                         style: TextStyle(fontSize: 32),
                       ),
-                      Text(
-                        "$teamAPoints",
-                        style: const TextStyle(fontSize: 170),
+                      SizedBox(
+                        width: 170.0,
+                        height: 200.0,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            "$teamAPoints",
+                            style: const TextStyle(fontSize: 170),
+                          ),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
@@ -130,9 +137,16 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "Team B",
                         style: TextStyle(fontSize: 32),
                       ),
-                      Text(
-                        "$teamBPoints",
-                        style: const TextStyle(fontSize: 170),
+                      SizedBox(
+                        width: 170.0,
+                        height: 200.0,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            "$teamBPoints",
+                            style: const TextStyle(fontSize: 170),
+                          ),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
