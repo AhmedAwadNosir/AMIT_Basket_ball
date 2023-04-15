@@ -12,6 +12,9 @@ class Basket_Ball_Counter_App extends StatefulWidget {
       _Basket_Ball_Counter_AppState();
 }
 
+int teamAPoints = 0;
+int teamBPoints = 0;
+
 class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
   @override
   Widget build(BuildContext context) {
@@ -37,9 +40,9 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "Team A",
                         style: TextStyle(fontSize: 32),
                       ),
-                      const Text(
-                        "0",
-                        style: TextStyle(fontSize: 170),
+                      Text(
+                        "$teamAPoints",
+                        style: const TextStyle(fontSize: 170),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
@@ -47,7 +50,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamAPoints++;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -67,7 +74,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamAPoints += 2;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -87,7 +98,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamAPoints += 3;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -115,9 +130,9 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "Team B",
                         style: TextStyle(fontSize: 32),
                       ),
-                      const Text(
-                        "0",
-                        style: TextStyle(fontSize: 170),
+                      Text(
+                        "$teamBPoints",
+                        style: const TextStyle(fontSize: 170),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 2),
@@ -125,7 +140,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamBPoints++;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -145,7 +164,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamBPoints += 2;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -165,7 +188,11 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                           height: 45,
                           width: 160,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                teamBPoints += 3;
+                              });
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                             ),
@@ -188,7 +215,12 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
               width: 170,
               height: 55,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    teamAPoints = 0;
+                    teamBPoints = 0;
+                  });
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange,
                 ),
