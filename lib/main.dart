@@ -41,45 +41,66 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "0",
                         style: TextStyle(fontSize: 170),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 1 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 2),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 1 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 2 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 2 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 3 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 3 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                   const VerticalDivider(
@@ -98,60 +119,85 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                         "0",
                         style: TextStyle(fontSize: 170),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 1 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 2),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 1 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 2 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 2 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                        ),
-                        child: const Text(
-                          "Add 3 Point",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.black87,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: SizedBox(
+                          height: 45,
+                          width: 160,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                            ),
+                            child: const Text(
+                              "Add 3 Point",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.black87,
+                              ),
+                            ),
                           ),
                         ),
-                      )
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange,
-              ),
-              child: const Text(
-                "Reset",
-                style: TextStyle(
-                  fontSize: 32,
-                  color: Colors.black87,
+            SizedBox(
+              width: 170,
+              height: 55,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                ),
+                child: const Text(
+                  "Reset",
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.black87,
+                  ),
                 ),
               ),
             ),
