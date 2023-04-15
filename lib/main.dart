@@ -43,8 +43,8 @@ class _Basket_Ball_Counter_AppState extends State<Basket_Ball_Counter_App> {
                       SizedBox(
                         width: 170.0,
                         height: 200.0,
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
+                        child: FittedBox(//for make it responsive for his size 
+                          fit: BoxFit.scaleDown,//not exidide size for it by sized box
                           child: Text(
                             "$teamAPoints",
                             style: const TextStyle(fontSize: 170),
